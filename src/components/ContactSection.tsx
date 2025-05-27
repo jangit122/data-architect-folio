@@ -6,18 +6,31 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+  honeypot: string;
+}
+
+interface FormErrors {
+  name?: string;
+  email?: string;
+  message?: string;
+}
+
 export const ContactSection = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     message: "",
     honeypot: ""
   });
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<FormErrors>({});
   const { toast } = useToast();
 
   const validateForm = () => {
-    const newErrors = {};
+    const newErrors: FormErrors = {};
     
     if (formData.name.length < 2) {
       newErrors.name = "Name must be at least 2 characters";
@@ -39,7 +52,7 @@ export const ContactSection = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     // Honeypot check
@@ -54,9 +67,9 @@ export const ContactSection = () => {
     }
   };
 
-  const handleChange = (field, value) => {
+  const handleChange = (field: keyof FormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
-    if (errors[field]) {
+    if (errors[field as keyof FormErrors]) {
       setErrors(prev => ({ ...prev, [field]: "" }));
     }
   };
