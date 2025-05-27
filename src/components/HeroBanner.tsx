@@ -10,10 +10,10 @@ export const HeroBanner = () => {
           Janardhan Gurram
         </h1>
         <h2 className="text-xl md:text-2xl text-blue-600 font-medium mb-4">
-          Data Engineer | AWS Certified ML Specialist
+          Big-Data Engineer | 13 Years' Experience
         </h2>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Transforming data into actionable insights.
+          Architecting scalable pipelines & transforming data into value.
         </p>
         <Button 
           variant="default" 
@@ -23,7 +23,7 @@ export const HeroBanner = () => {
         >
           <a href="/Janardhan_Gurram_Resume.pdf" target="_blank" rel="noopener">
             <Download className="mr-2 h-5 w-5" />
-            Download Resume
+            Download Résumé
           </a>
         </Button>
       </div>

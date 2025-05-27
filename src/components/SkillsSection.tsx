@@ -2,8 +2,8 @@
 import { Badge } from "@/components/ui/badge";
 
 const skills = [
-  "Python", "Java", "SQL", "Apache Spark", "Hadoop", 
-  "Airflow", "AWS", "Docker", "Kubernetes", "ETL"
+  "Scala", "Spark", "Python", "SQL", "Hadoop", "Airflow", 
+  "BigQuery", "AWS ECS/EC2", "GCP Dataproc", "MongoDB", "CI/CD (Jenkins)"
 ];
 
 export const SkillsSection = () => {

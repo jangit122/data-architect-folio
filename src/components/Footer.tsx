@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex justify-center space-x-6 mb-6">
           <a 
-            href="https://linkedin.com/in/janardhan-gurram" 
+            href="https://linkedin.com/in/janardhangurram" 
             target="_blank" 
             rel="noopener"
             className="text-gray-600 hover:text-blue-600 transition-colors opacity-60 hover:opacity-100"
@@ -15,7 +15,7 @@ export const Footer = () => {
             <Linkedin className="h-6 w-6" />
           </a>
           <a 
-            href="https://github.com/janardhan-gurram" 
+            href="https://github.com/janardhangurram" 
             target="_blank" 
             rel="noopener"
             className="text-gray-600 hover:text-blue-600 transition-colors opacity-60 hover:opacity-100"

@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 
 const testimonials = [
   { 
-    author: "Manager, Honeywell", 
-    quote: "Janardhan's ETL pipelines reduced our data latency by 40%." 
+    author: "Shutterfly Engineering Manager", 
+    quote: "Janardhan drove our platform modernization with zero disruption and 30% performance gain." 
   },
   { 
-    author: "Peer Developer", 
-    quote: "Outstanding collaboration and code quality." 
+    author: "Walmart Data Lead", 
+    quote: "His Spark pipelines became the backbone of our analytics." 
   }
 ];
 
@@ -27,7 +27,7 @@ export const TestimonialsSection = () => {
   return (
     <section className="py-20 px-6 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12 text-black dark:text-white">What Colleagues Say</h2>
+        <h2 className="text-4xl font-bold mb-12 text-black dark:text-white">Colleague Insights</h2>
         <Card className="max-w-2xl mx-auto">
           <CardContent className="p-8">
             <blockquote className="text-xl italic text-gray-700 dark:text-gray-300 mb-4">

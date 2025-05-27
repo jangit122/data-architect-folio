@@ -1,15 +1,25 @@
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
     id: "project-1",
-    title: "IoT Water-Level Controller",
-    description: "Automated real-time water level monitoring & alerts using MQTT & AWS IoT Core.",
-    link: "https://doi.org/10.1051/e3sconf/202447202004",
-    tags: ["IoT", "AWS", "MQTT"]
+    title: "Shutterfly Simplification and Data Migration",
+    description: "Led migration of 10M+ user records from SQL to MongoDB on AWS ECS, ensuring 100% data integrity and zero downtime.",
+    tags: ["Scala", "Kafka", "AWS ECS", "MongoDB"]
+  },
+  {
+    id: "project-2",
+    title: "Walmart Luminate ETL",
+    description: "Built Spark/Scala pipelines on GCP to ingest & transform multi-TB datasets daily into BigQuery for analytics.",
+    tags: ["Spark", "GCP Dataproc", "BigQuery"]
+  },
+  {
+    id: "project-3",
+    title: "Smart Meter Analytics",
+    description: "Processed millions of IoT meter readings using Hadoop/Spark to feed real-time dashboards in Hive.",
+    tags: ["Hive", "Hadoop", "Spark"]
   }
 ];
 
@@ -17,7 +27,7 @@ export const ProjectsSection = () => {
   return (
     <section className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-black dark:text-white">Featured Work & Research</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-black dark:text-white">Featured Initiatives</h2>
         <Accordion type="single" collapsible className="w-full">
           {projects.map((project) => (
             <AccordionItem key={project.id} value={project.id}>
@@ -28,19 +38,11 @@ export const ProjectsSection = () => {
                 <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <Badge key={tag} variant="outline">{tag}</Badge>
                   ))}
                 </div>
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener"
-                  className="inline-flex items-center text-blue-600 hover:underline"
-                >
-                  View Publication <ExternalLink className="ml-1 h-4 w-4" />
-                </a>
               </AccordionContent>
             </AccordionItem>
           ))}

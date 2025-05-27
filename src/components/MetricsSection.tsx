@@ -2,9 +2,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const metrics = [
-  { label: "Daily Data Processed", value: "100 GB+" },
-  { label: "ETL Runtime Reduction", value: "40%" },
-  { label: "Pipelines Deployed", value: "12" }
+  { label: "Years' Experience", value: "13+" },
+  { label: "Data Processed/Day", value: "100 GB+" },
+  { label: "Records Migrated", value: "220 M+" },
+  { label: "ETL Runtime ↓", value: "40%" }
 ];
 
 export const MetricsSection = () => {
@@ -12,7 +13,7 @@ export const MetricsSection = () => {
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-black dark:text-white">Key Achievements</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {metrics.map((metric, index) => (
             <Card key={index} className="text-center hover:shadow-lg transition-all duration-300">
               <CardHeader>
