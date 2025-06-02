@@ -24,7 +24,7 @@ export const AboutSection = () => {
                 <AvatarImage 
                   src="/lovable-uploads/91dfbd68-e9bb-4c77-90bd-9bf76efad06d.png" 
                   alt="Janardhan Gurram - Big Data Engineer"
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
                 <AvatarFallback className="text-4xl font-bold bg-blue-100 text-blue-800">
                   JG
