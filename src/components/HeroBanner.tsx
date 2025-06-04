@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 
 export const HeroBanner = () => {
   return (
@@ -15,17 +14,6 @@ export const HeroBanner = () => {
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
           Architecting scalable pipelines & transforming data into value.
         </p>
-        <Button 
-          variant="default" 
-          size="lg" 
-          className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-          asChild
-        >
-          <a href="/Janardhan_Gurram_Resume.pdf" target="_blank" rel="noopener">
-            <Download className="mr-2 h-5 w-5" />
-            Download Résumé
-          </a>
-        </Button>
       </div>
     </section>
   );
