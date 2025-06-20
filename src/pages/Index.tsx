@@ -11,6 +11,8 @@ import { Footer } from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Index = () => {
+  console.log("Index component is rendering");
+  
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
       <ThemeToggle />
